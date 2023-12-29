@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  border-radius: 8px;
+  transition: 150ms ease-in-out;
+  width: 302px; /* Ширина карточки */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .card_image {
+    width: 100%; /* Ширина изображения соответствует ширине карточки */
+    height: 350px; /* Увеличенная фиксированная высота изображения */
+    object-fit: cover; /* Изображение заполняет блок, сохраняя свои пропорции */
+  }
+
+  .card_content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    min-height: 90px; /* Фиксированная высота для текста и цены */
+  }
+
+  .card_title {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .card_price {
+    font-size: 1.2em;
+    color: #4caf50;
+  }
+}

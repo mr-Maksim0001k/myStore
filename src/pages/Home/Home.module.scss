@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homeContainer {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(16.666% - 20px), 1fr));
+  grid-gap: 29px;
+  max-width: 1600px;
+  margin: 30px auto;
+
+  // margin-left: 20px;
+  // margin-top: 20px;
+  // padding: 20px;
+  box-sizing: border-box;
+}

@@ -10,7 +10,7 @@ const SearchParams = () => {
   if (!location || !location.pathname) {
     return null; // или отобразить сообщение об ошибке
   }
-
+  console.log("hello world");
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
